@@ -1,5 +1,5 @@
 
-let input = document.getElementById('val_input');
+const input = document.getElementById('val_input');
 input.addEventListener('keydown', function(event){
     const request = getRequest(event.target.value ? event.target.value : '');
     renderFilms(request);
@@ -7,13 +7,12 @@ input.addEventListener('keydown', function(event){
 
 
 function getRequest(query) {
-    let requestServer = new XMLHttpRequest();
+    const requestServer = new XMLHttpRequest();
     requestServer.open('GET', `https://api.tvmaze.com/search/shows?q=${query}`);
     requestServer.responseType = 'json';
     requestServer.send();
     return requestServer;
 }
-//Функция для рендера фильмов, которая принимает в себя сам запрос
 function renderFilms(server) {
     if (server) {
         server.onload = function (){
@@ -23,7 +22,6 @@ function renderFilms(server) {
         alert('Упс! Проблема!')
     }
 }
-//Перебирает объект который нам возвращает XMLHtt-запрос и создает разметку под вернувшиеся объекты
 function addElem(tagName, container) {
     return container.appendChild(document.createElement('tagName'))
 }
