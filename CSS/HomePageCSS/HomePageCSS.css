@@ -1,0 +1,182 @@
+#authorization_field{
+    height: 100vh;
+    align-content: center;
+    overflow: auto;
+    align-items: center;
+    display:flex;
+    justify-content: flex-end;
+   /* background-color: #C8D7D2;*/
+   background-image: url(../../../../art-красивые-картинки-чеширский-кот-993509.jpeg);
+   background-size: 100%;
+
+}
+
+#flags{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 3px 5px -5px black ;
+}
+
+#loginUp{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    width: 220px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 5px 10px -5px;
+    font-size: 30px;
+    align-items: center;
+    margin: 5px;
+}
+
+#signUp{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    color: honeydew;
+}
+
+#sign{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+}
+
+#firstName{
+    width: 200px;
+    height: 45px;
+    padding: 3px;
+    border: 0px solid grey;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    box-shadow: 4px 9px 20px -9px black ;
+    margin: 10px;
+}
+
+#lastName{
+    width: 200px;
+    height: 45px;
+    padding: 3px;
+    border: 0px solid grey;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    box-shadow: 4px 9px 20px -9px black ;
+    margin: 10px;
+}
+
+#adress{
+    display: flex;
+    justify-content: center;
+}
+
+#inputAdress{
+    width: 432px;
+    height: 45px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: 0px solid gray;
+    box-shadow: 4px 9px 20px -9px black ;
+    background-color: aliceblue;
+}
+
+#password{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#inputPassw{
+    width: 432px;
+    height: 45px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: 0px solid gray;
+    box-shadow: 4px 9px 20px -9px black ;
+}
+
+#getStarted{
+    display: flex;
+    justify-content: center;
+}
+
+#blockStart{
+    width: 432px;
+    height: 55px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: 0px solid gray;
+    box-shadow: 4px 9px 20px -9px black ;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+/* style для авторизации*/
+#authorization{
+    display: none ;
+}
+
+#inputAdressAuthorization{
+    width: 432px;
+    height: 45px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: 0px solid gray;
+    box-shadow: 4px 9px 20px -9px black ;
+}
+
+#inputPasswAuthorization{
+    width: 432px;
+    height: 45px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: 0px solid gray;
+    box-shadow: 4px 9px 20px -9px black ;
+}
+
+#blockStartAuth{
+    width: 432px;
+    height: 55px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: 0px solid gray;
+    box-shadow: 4px 9px 20px -9px black ;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 10px;
+    margin-top: 15px;
+}

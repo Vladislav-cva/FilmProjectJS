@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    background:#C8D7D2;
+    
+}
+
+h3{
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+.content{
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: #7d7e7d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+  
+}
+
+.header_logo{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header_logo ul{
+    list-style: none;
+}
+
+.header_logo > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.header_logo > ul li a{
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    color:rgb(235, 230, 230);
+    transition: all 0.3s ease;
+}
+
+.header_logo li a:hover{
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f85032+0,f16f5c+3,f6290c+62,f02f17+71,e73827+100 */
+    background: #f85032; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 3%, #f6290c 62%, #f02f17 71%, #e73827 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 3%,#f6290c 62%,#f02f17 71%,#e73827 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 3%,#f6290c 62%,#f02f17 71%,#e73827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+    
+    color: #ccccff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+    }
+
+/* sub menu*/
+
+.header_logo li ul{
+    position: absolute;
+    min-width: 100px;
+    display: none;
+}
+
+.header_logo{
+    border: 1 px solid black;
+}
+
+.header_logo li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cedce7+0,596a72+100 */
+    background: #cedce7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cedce7 0%, #596a72 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #cedce7 0%,#596a72 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #cedce7 0%,#596a72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+
+}
+
+.header_logo li > ul li ul{
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
+
+.header_logo li:hover > ul{
+    display: block;
+}
+
+/*main content*/
+
+.main_content{
+    width: 100%;
+    height: 100%;
+    position: block;
+    top: 0;
+    left: 0;
+    align-content: center;
+    overflow: auto;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: row ;
+}
+
+#val_input{
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    border: 0px solid grey;
+    border-radius: 10px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    box-shadow: 4px 9px 20px -9px black ;
+}
+
+::placeholder{
+    text-align: center; 
+    color: darkgray;
+}
+ 
+/* icon */
+
+.search_film{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+
+}
+
+#icon_video{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+/* List of created blocks for movis*/
+
+#parentFilm{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.filmArea{
+    
+    /* display: flex;
+    justify-content: column;
+    background-color: darkgreen; */
+}
+
+.imageBlock{
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    width: 400px;
+    height: 400px;
+
+}
+@media(max-width : 400px){
+    .image{
+        width: 200px;
+        height: 200px ;
+    }
+
+    #val_input{
+        width: 300px;
+    }
+}
+
+ .discriptionFilm{
+    max-width: 200vh;
+
+} 
