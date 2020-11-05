@@ -13,7 +13,7 @@ const [
     inputPasswAuthorization,
     blockStartAuth
 ] = elems
-let switchLog = document.getElementsByClassName('login');
+const switchLog = document.getElementsByClassName('login');
 const apiPath = 'https://api.jsonbin.io';
 const signUpUserdata = {
 	name: '',
@@ -38,10 +38,10 @@ for (let i = 0; i < switchLog.length; i++) {
 }
 getEmail.addEventListener('blur', function() {
 	const Reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-	if (!Reg.test(getEmail.value)) {
-		getEmail.style.backgroundColor = 'Red';
-		return;
-	}
+	    if (!Reg.test(getEmail.value)) {
+		    getEmail.style.backgroundColor = 'Red';
+		    return;
+	    }
 	getEmail.style.backgroundColor = 'aliceblue';
 });
 

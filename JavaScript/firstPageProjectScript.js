@@ -30,37 +30,37 @@ function addElem(tagName, container) {
 
 let spawnFims = function(films) {
     films.forEach(element => {
-        //let filmArea = document.createElement('div');
-         //filmArea.className = 'filmArea';
-         addElem('div', filmArea)
-        let parentFilm = document.getElementById('parentFilm')
-         parentFilm.appendChild(filmArea)
-        //let imageBlock = document.createElement('div');
-         //imageBlock.className = 'imageBlock';
-         addElem('div', filmArea).className = 'imageBlock'
-         //filmArea.appendChild(imageBlock);
-        let image = document.createElement('img');
-         image.className = "image";
-         imageBlock.appendChild(image);
-         image.setAttribute('src', element.show.image ? element.show.image.original : ' ');
-        let discriptionFilm = document.createElement('div');
-         discriptionFilm.className = 'discriptionFilm';
-         filmArea.appendChild(discriptionFilm);
-         // Описание для фильмов в discriptionFilm = H3
-        let paragrafs = document.createElement('h3');
-         discriptionFilm.appendChild(paragrafs);
-         paragrafs.innerHTML =  element.show.summary;
+        const parentFilm = document.getElementById('parentFilm')
+        const image = document.createElement('img');
+        const discriptionFilm = document.createElement('div');
+        const paragrafs = document.createElement('h3');
         const nameFilm = document.createElement('H3');
-        discriptionFilm.appendChild(nameFilm);
-         nameFilm.innerHTML = element.show.name;
-        let genres = document.createElement('h3');
-         discriptionFilm.appendChild(genres);
-         genres.innerHTML = element.show.genres;
-        let rating = document.createElement('h3');
-         discriptionFilm.appendChild(rating);
-         rating.innerHTML = element.show.rating.average;
-        let urlLink = document.createElement('h3');
-         discriptionFilm.appendChild(urlLink);
-         urlLink.innerHTML = element.show.url;
+        const genres = document.createElement('h3');
+        const rating = document.createElement('h3');
+        const urlLink = document.createElement('h3');
+        //let filmArea = document.createElement('div');
+        //filmArea.className = 'filmArea';
+            addElem('div', filmArea)
+            parentFilm.appendChild(filmArea)
+        //let imageBlock = document.createElement('div');
+        //imageBlock.className = 'imageBlock';
+            addElem('div', filmArea).className = 'imageBlock'
+        //filmArea.appendChild(imageBlock);
+            image.className = "image";
+            imageBlock.appendChild(image);
+            image.setAttribute('src', element.show.image ? element.show.image.original : ' ');
+            discriptionFilm.className = 'discriptionFilm';
+            filmArea.appendChild(discriptionFilm);
+        // Описание для фильмов в discriptionFilm = H3
+            discriptionFilm.appendChild(paragrafs);
+            paragrafs.innerHTML =  element.show.summary;
+            discriptionFilm.appendChild(nameFilm);
+            nameFilm.innerHTML = element.show.name;
+            discriptionFilm.appendChild(genres);
+            genres.innerHTML = element.show.genres;
+            discriptionFilm.appendChild(rating);
+            rating.innerHTML = element.show.rating.average;
+            discriptionFilm.appendChild(urlLink);
+            urlLink.innerHTML = element.show.url;
     });
 } 
